@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="013a7a5f-3ddd-4de9-b1e1-f5f6c18ee2bc" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/357943D0-9F4F-4E99-9736-6ED00D4CC9A2/d1/08b522ae/DependencyObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/VL.TimelineCore/BooleanBoxes.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/VL.TimelineCore/DoubleAnimationUsingKeyFrames.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3BCDABCE-AB43-41BA-8F8D-B5A06E9A7C18/6b/5dd05f23/AnimationTimeline.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F32505C5-59F6-4436-9659-51ACD16EAF13/16/d210c080/SRID.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/VL.TimelineCore/ResolvedKeyFrameEntry.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/VL.TimelineCore/Test.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/VL.TimelineCore/Class1.cs" />
+        <option value="$PROJECT_DIR$/VL.TimelineCore/Point/ControlPointType.cs" />
+        <option value="$PROJECT_DIR$/VL.TimelineCore/Point/HandleType.cs" />
+        <option value="$PROJECT_DIR$/VL.TimelineCore/Point/Class1.cs" />
+        <option value="$PROJECT_DIR$/VL.TimelineCore/Point/ControlPoint.cs" />
+        <option value="$PROJECT_DIR$/VL.TimelineCore/TrackData.cs" />
+        <option value="$PROJECT_DIR$/VL.TimelineCore/cc/creativecomputing/control/timeline/point/ControlPoint.cs" />
+        <option value="$PROJECT_DIR$/VL.TimelineCore/cc/creativecomputing/control/timeline/point/LinearControlPoint.cs" />
+        <option value="$PROJECT_DIR$/VL.TimelineCore/cc/creativecomputing/control/timeline/point/StepControlPoint.cs" />
+        <option value="$PROJECT_DIR$/VL.TimelineCore/cc/creativecomputing/control/timeline/point/BezierControlPoint.cs" />
+        <option value="$PROJECT_DIR$/VL.TimelineCore/cc/creativecomputing/control/timeline/point/HandleControlPoint.cs" />
+        <option value="$PROJECT_DIR$/VL.TimelineCore/cc/creativecomputing/control/timeline/point/MarkerPoint.cs" />
+        <option value="$PROJECT_DIR$/VL.TimelineCore/cc/creativecomputing/control/timeline/point/TimedEventPoint.cs" />
+        <option value="$PROJECT_DIR$/VL.TimelineCore/cc/creativecomputing/control/handles/CCPropertyHandle.cs" />
+        <option value="$PROJECT_DIR$/VL.TimelineCore/cc/creativecomputing/control/timeline/TrackData.cs" />
+        <option value="$PROJECT_DIR$/VL.TimelineCore/DoubleAnimationBase.cs" />
+        <option value="$PROJECT_DIR$/VL.TimelineCore/AnimationTimeline.cs" />
+        <option value="$PROJECT_DIR$/VL.TimelineCore/Timeline.cs" />
+        <option value="$PROJECT_DIR$/VL.TimelineCore/Animatable.cs" />
+        <option value="$PROJECT_DIR$/VL.TimelineCore/ResolvedKeyFrameEntry.cs" />
+        <option value="$PROJECT_DIR$/VL.TimelineCore/BooleanBoxes.cs" />
+        <option value="$PROJECT_DIR$/VL.TimelineCore/DoubleAnimationUsingKeyFrames.cs" />
+        <option value="$PROJECT_DIR$/VL.TimelineCore/Test.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jCXXPmDp4TDAfLFPHiF2bdN695" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TWShift.4" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="application.passwordSafe" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="013a7a5f-3ddd-4de9-b1e1-f5f6c18ee2bc" name="Default Changelist" comment="" />
+      <created>1603309088263</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603309088263</updated>
+      <workItem from="1603309097932" duration="2848000" />
+      <workItem from="1603391838731" duration="293000" />
+      <workItem from="1603392173329" duration="9969000" />
+      <workItem from="1603704336208" duration="166000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="WindowStateProjectService">
+    <state x="736" y="357" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603435727299">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="736" y="357" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1603435727299" />
+    <state x="873" y="434" key="Rider.ProjectTemplateDialog.Size" timestamp="1603435974690">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="873" y="434" key="Rider.ProjectTemplateDialog.Size/0.0.2560.1400@0.0.2560.1400" timestamp="1603435974690" />
+    <state x="1069" y="355" key="RiderGenerateDialog" timestamp="1603392547011">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1069" y="355" key="RiderGenerateDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1603392547011" />
+    <state x="782" y="344" key="SettingsEditor" timestamp="1603704501876">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="782" y="344" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1603704501876" />
+    <state x="1070" y="619" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603704581937">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1070" y="619" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1603704581937" />
+  </component>
+</project>
