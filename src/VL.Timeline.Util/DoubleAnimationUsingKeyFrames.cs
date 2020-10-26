@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Linq;
 using System.Windows;
 using System.Windows.Markup;
 using System.Windows.Media.Animation;
@@ -401,15 +402,15 @@ namespace VL.TimelineCore
                 }
                 else
                 {
-                    Int32 previousResolvedKeyFrameIndex = currentResolvedKeyFrameIndex - 1;
-                    TimeSpan previousResolvedKeyTime =
+                    var previousResolvedKeyFrameIndex = currentResolvedKeyFrameIndex - 1;
+                    var previousResolvedKeyTime =
                         _sortedResolvedKeyFrames[previousResolvedKeyFrameIndex]._resolvedKeyTime;
 
                     fromValue = GetResolvedKeyFrameValue(previousResolvedKeyFrameIndex);
 
-                    TimeSpan segmentCurrentTime = currentTime - previousResolvedKeyTime;
-                    TimeSpan segmentDuration = _sortedResolvedKeyFrames[currentResolvedKeyFrameIndex]._resolvedKeyTime -
-                                               previousResolvedKeyTime;
+                    var segmentCurrentTime = currentTime - previousResolvedKeyTime;
+                    var segmentDuration = _sortedResolvedKeyFrames[currentResolvedKeyFrameIndex]._resolvedKeyTime -
+                                          previousResolvedKeyTime;
 
                     currentSegmentProgress = segmentCurrentTime.TotalMilliseconds
                                              / segmentDuration.TotalMilliseconds;
@@ -441,6 +442,32 @@ namespace VL.TimelineCore
 
 
             return currentIterationValue;
+        }
+
+        public List<DoubleKeyFrame> SortedKeyFrames()
+        {
+            var myResult = new List<DoubleKeyFrame>(); 
+
+            if (_keyFrames == null)
+            {
+                return myResult;
+            }
+
+            // We resolved our KeyTimes when we froze, but also got notified
+            // of the frozen state and therefore invalidated ourselves.
+            if (!_areKeyTimesValid)
+            {
+                ResolveKeyTimes();
+            }
+
+            if (_sortedResolvedKeyFrames == null)
+            {
+                return myResult;
+            }
+
+            myResult.AddRange(_sortedResolvedKeyFrames.Select(frame => KeyFrames[frame._originalKeyFrameIndex]));
+
+            return myResult;
         }
 
         public double GetCurrentValueCore(
