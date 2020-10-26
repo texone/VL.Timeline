@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="ULnxTf75seKOqze9f572XA" LanguageVersion="2020.3.0.45" Version="0.128">
+  <NugetDependency Id="KmuidS169T5OfbAGaCEBDh" Location="VL.CoreLib" Version="2020.3.0-0045-gc82a9aa692" />
+  <Patch Id="A8R0Txd5TmdPsOxcL4rLMu">
+    <Canvas Id="EIBjrPON2fUN7SQejgCKkE" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="Ch06TGEp1aoN0wJchkgx4z">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="I6gfkvML2FyPdXTYWkElAf">
+        <Canvas Id="Et6MCFOuqBZPo7phAy8PDW" CanvasType="Group">
+          <Node Bounds="577,324,137,26" Id="PQygMPcKJbNPfLF0Cz9kOD">
+            <p:NodeReference LastCategoryFullName="VL.TimelineCore.DoubleAnimationUsingKeyFrames" LastSymbolSource="VL.Timeline.Util.dll">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="AssemblyCategory" Name="VL" />
+              <CategoryReference Kind="AssemblyCategory" Name="TimelineCore" />
+              <CategoryReference Kind="AssemblyCategory" Name="DoubleAnimationUsingKeyFrames" />
+              <Choice Kind="OperationCallFlag" Name="Create" />
+            </p:NodeReference>
+            <Pin Id="FspWvwpQn1BOpCYM7qAxlJ" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="628,758" Id="VKUzWMz7NqMOurfN6vCyza">
+            <p:NodeReference LastCategoryFullName="VL.TimelineCore.DoubleAnimationUsingKeyFrames" LastSymbolSource="VL.Timeline.Util.dll">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="GetCurrentValueCore" />
+            </p:NodeReference>
+            <Pin Id="VXAlZome3iAM0NmHKNLMTR" Name="Input" Kind="StateInputPin" />
+            <Pin Id="TqxK22u2hLuOWX08ucO5SH" Name="Default Origin Value" Kind="InputPin" />
+            <Pin Id="QjXSWCJ22y4NJjmoYfEYds" Name="Default Destination Value" Kind="InputPin" />
+            <Pin Id="DMzSU8VDw9MP93uOTSYm8l" Name="Current Time" Kind="InputPin" />
+            <Pin Id="SDWL6ZeH0H7PgiJ4HIQnAp" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="K4DIPMt7raROSvwK1TYAHZ" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="778,668" Id="JckvwSmItdyP6F76Ctwe43">
+            <p:NodeReference LastCategoryFullName="System.TimeSpan" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="FromSeconds" />
+              <CategoryReference Kind="RecordType" Name="TimeSpan" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="BFPdKNgcBgENVlfmZGdt7E" Name="Value" Kind="InputPin" />
+            <Pin Id="Ot9UnOYmSsML6JrhL3s6z0" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="702,453,137,26" Id="OXaTu6jB6WcQK3XntXVvDh">
+            <p:NodeReference LastCategoryFullName="VL.TimelineCore.DoubleAnimationUsingKeyFrames" LastSymbolSource="VL.Timeline.Util.dll">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="AssemblyCategory" Name="DoubleAnimationUsingKeyFrames" />
+              <Choice Kind="OperationCallFlag" Name="KeyFrames" />
+            </p:NodeReference>
+            <Pin Id="Bt85Kp4aZJfL1Q3ivf33Vv" Name="Input" Kind="StateInputPin" />
+            <Pin Id="LUWVjRTInv8OskhdeU1cCm" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="GuAZaervLbhLlzy8C4yjaT" Name="Key Frames" Kind="OutputPin" />
+          </Node>
+          <Pad Id="ORp3j7RzzNFNCtPX2Fhw0P" Bounds="673,594" />
+          <Node Bounds="933,558" Id="RxWsIme7efMNyou4BzXKft">
+            <p:NodeReference LastCategoryFullName="System.Windows.Media.Animation.DoubleKeyFrameCollection" LastSymbolSource="PresentationCore.dll">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="AssemblyCategory" Name="DoubleKeyFrameCollection" />
+              <Choice Kind="OperationCallFlag" Name="Add" />
+            </p:NodeReference>
+            <Pin Id="K4igPt0h899NvLFKru6dGj" Name="Input" Kind="StateInputPin" />
+            <Pin Id="D0Bu2IMkLMaLBeTOSJRdN1" Name="Key Frame" Kind="InputPin" />
+            <Pin Id="P6B5qMyMI9oMkub14ucmwP" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="Q8TOrsQvKicMMgMP79X4Nx" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="1032,434" Id="D3WfgfSsginL2SATqYymaW">
+            <p:NodeReference LastCategoryFullName="System.Windows.Media.Animation.LinearDoubleKeyFrame" LastSymbolSource="PresentationCore.dll">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="AssemblyCategory" Name="LinearDoubleKeyFrame" />
+              <Choice Kind="OperationCallFlag" Name="Create" />
+              <PinReference Kind="InputPin" Name="Value" />
+              <PinReference Kind="InputPin" Name="Key Time" />
+            </p:NodeReference>
+            <Pin Id="PuVe9xvotwlOxvsVlmmnc5" Name="Value" Kind="InputPin" />
+            <Pin Id="Ni4Xkr0MLM7QAPRWiDfVi1" Name="Key Time" Kind="InputPin" />
+            <Pin Id="SsBEMXk7Zu6NZLVBdRrOh4" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Pad Id="SIW0X1d03yFOMjt0Ru5aKy" Comment="" Bounds="1029,330,35,15" ShowValueBox="true" isIOBox="true" Value="10">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Float64" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="1134,341" Id="EyhiHzdxTqvMv82e2dp8mi">
+            <p:NodeReference LastCategoryFullName="System.Windows.Media.Animation.KeyTime" LastSymbolSource="PresentationCore.dll">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="AssemblyCategory" Name="KeyTime" />
+              <Choice Kind="OperationCallFlag" Name="FromTimeSpan" />
+              <PinReference Kind="InputPin" Name="Time Span" />
+            </p:NodeReference>
+            <Pin Id="FGT17waxYz2LT5wm4u5ywL" Name="Time Span" Kind="InputPin" />
+            <Pin Id="S3weGIxjHj8L1q3CcEo4RB" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="1132,246" Id="LMKbujOeA81Nt6GNd7TIRW">
+            <p:NodeReference LastCategoryFullName="System.TimeSpan" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="FromSeconds" />
+              <CategoryReference Kind="RecordType" Name="TimeSpan" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="R9lFt3cwM94M90BG67JwF6" Name="Value" Kind="InputPin" />
+            <Pin Id="KK8rqfCS9CgLH8dIn2kzD7" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="TwVuEWNXpqbMPupF8zQIxC" Comment="" Bounds="1146,196,35,15" ShowValueBox="true" isIOBox="true" Value="10">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Float64" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="HDFiGlSivfVLVrc5WjxJob" Comment="" Bounds="767,610,35,15" ShowValueBox="true" isIOBox="true" Value="5.08999988622963">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Float64" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="PV9ZWbMKUo5On2aoEk6SL6" Comment="" Bounds="833,859,35,15" ShowValueBox="true" isIOBox="true" />
+        </Canvas>
+        <Patch Id="JB09keHP8wDMQzLdKNMvl5" Name="Create" ParticipatingElements="NWl5f1oS1DpPwuEOQdV8To" />
+        <Patch Id="C3mHup80fgGOTVY9IX70bW" Name="Update" />
+        <!--
+
+    ************************  ************************
+
+-->
+        <ProcessDefinition Id="UgudzjllDZhNVV8l3GZbgC">
+          <Fragment Id="VieZlmTyKGNPaAb6hFNt2L" Patch="JB09keHP8wDMQzLdKNMvl5" Enabled="true" />
+          <Fragment Id="GJ3Evp8pMc0PvDAckAOs3O" Patch="C3mHup80fgGOTVY9IX70bW" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="Psp5DXguTUuNuwzX4mUC1E" Ids="Ot9UnOYmSsML6JrhL3s6z0,DMzSU8VDw9MP93uOTSYm8l" />
+        <Link Id="FyXhp42WsyGPFBluQUVGNd" Ids="FspWvwpQn1BOpCYM7qAxlJ,Bt85Kp4aZJfL1Q3ivf33Vv" />
+        <Link Id="NWl5f1oS1DpPwuEOQdV8To" Ids="LUWVjRTInv8OskhdeU1cCm,ORp3j7RzzNFNCtPX2Fhw0P" />
+        <Link Id="OvP5FHwMlNGOmlal6Qxhu6" Ids="ORp3j7RzzNFNCtPX2Fhw0P,VXAlZome3iAM0NmHKNLMTR" />
+        <Link Id="Ib5nS9LZDYfO3a8K4IsFiF" Ids="GuAZaervLbhLlzy8C4yjaT,K4igPt0h899NvLFKru6dGj" />
+        <Link Id="LHIuQuL7W5HQTs99g2czAW" Ids="SsBEMXk7Zu6NZLVBdRrOh4,D0Bu2IMkLMaLBeTOSJRdN1" />
+        <Link Id="SWHrhC1ZBVqNkUe0sErjJA" Ids="SIW0X1d03yFOMjt0Ru5aKy,PuVe9xvotwlOxvsVlmmnc5" />
+        <Link Id="LSFEaILwlIbORnMJDmmFXW" Ids="S3weGIxjHj8L1q3CcEo4RB,Ni4Xkr0MLM7QAPRWiDfVi1" />
+        <Link Id="J1oDtgiSuuUNxJLKlqcckH" Ids="KK8rqfCS9CgLH8dIn2kzD7,FGT17waxYz2LT5wm4u5ywL" />
+        <Link Id="BZF47B0RdavPN2xVJMJOby" Ids="TwVuEWNXpqbMPupF8zQIxC,R9lFt3cwM94M90BG67JwF6" />
+        <Link Id="OYlgrPHQsHVLBLB5C8K7mS" Ids="HDFiGlSivfVLVrc5WjxJob,BFPdKNgcBgENVlfmZGdt7E" />
+        <Link Id="CETkfskgBLhNMgKHcJ63NL" Ids="K4DIPMt7raROSvwK1TYAHZ,PV9ZWbMKUo5On2aoEk6SL6" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="FxuOaYl0WgGQbnnYHDthcd" Location="VL.Stride" Version="0.8.19-gfdea785cd6" />
+  <PlatformDependency Id="V2CZfG1WtaqPxC4nGqyLw2" Location="./src/VL.Timeline.Util/obj/Debug/VL.Timeline.Util.dll" />
+  <PlatformDependency Id="HWOEWW2oPySLZMQr5W5LLB" Location="PresentationCore" />
+  <PlatformDependency Id="FGbrMkKkwEQM0DNB8TTzbW" Location="PresentationFramework" />
+</Document>
