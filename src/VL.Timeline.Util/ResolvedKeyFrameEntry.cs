@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace VL.TimelineCore
+namespace VL.Timeline.Util
 {
     internal struct ResolvedKeyFrameEntry : IComparable
     {

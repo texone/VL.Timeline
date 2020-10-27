@@ -8,14 +8,14 @@ using System.Windows;
 using System.Windows.Markup;
 using System.Windows.Media.Animation;
 
-namespace VL.TimelineCore
+namespace VL.Timeline.Util
 {
     /// <summary>
     /// This class is used to animate a Double property value along a set
     /// of key frames.
     /// </summary>
     [ContentProperty("KeyFrames")]
-    public class DoubleAnimationUsingKeyFrames : DoubleAnimationBase, IKeyFrameAnimation, IAddChild
+    public class DoubleKeyFrameAnimation : DoubleAnimationBase, IKeyFrameAnimation, IAddChild
     {
         #region Data
 
@@ -30,7 +30,7 @@ namespace VL.TimelineCore
         /// <Summary>
         /// Creates a new KeyFrameDoubleAnimation.
         /// </Summary>
-        public DoubleAnimationUsingKeyFrames()
+        public DoubleKeyFrameAnimation()
             : base()
         {
             _areKeyTimesValid = true;
@@ -44,9 +44,9 @@ namespace VL.TimelineCore
         /// Creates a copy of this KeyFrameDoubleAnimation.
         /// </summary>
         /// <returns>The copy</returns>
-        public new DoubleAnimationUsingKeyFrames Clone()
+        public new DoubleKeyFrameAnimation Clone()
         {
-            return (DoubleAnimationUsingKeyFrames) base.Clone();
+            return (DoubleKeyFrameAnimation) base.Clone();
         }
 
 
@@ -58,9 +58,9 @@ namespace VL.TimelineCore
         /// Since this class isn't animated, this method will always just return
         /// this instance of the class.
         /// </returns>
-        public new DoubleAnimationUsingKeyFrames CloneCurrentValue()
+        public new DoubleKeyFrameAnimation CloneCurrentValue()
         {
-            return (DoubleAnimationUsingKeyFrames) base.CloneCurrentValue();
+            return (DoubleKeyFrameAnimation) base.CloneCurrentValue();
         }
 
         /// <summary>
@@ -97,7 +97,7 @@ namespace VL.TimelineCore
         /// <returns>The new Freezable.</returns>
         protected override Freezable CreateInstanceCore()
         {
-            return new DoubleAnimationUsingKeyFrames();
+            return new DoubleKeyFrameAnimation();
         }
 
         /// <summary>
@@ -105,7 +105,7 @@ namespace VL.TimelineCore
         /// </summary>
         protected override void CloneCore(Freezable sourceFreezable)
         {
-            var sourceAnimation = (DoubleAnimationUsingKeyFrames) sourceFreezable;
+            var sourceAnimation = (DoubleKeyFrameAnimation) sourceFreezable;
             base.CloneCore(sourceFreezable);
 
             CopyCommon(sourceAnimation, /* isCurrentValueClone = */ false);
@@ -116,7 +116,7 @@ namespace VL.TimelineCore
         /// </summary>
         protected override void CloneCurrentValueCore(Freezable sourceFreezable)
         {
-            var sourceAnimation = (DoubleAnimationUsingKeyFrames) sourceFreezable;
+            var sourceAnimation = (DoubleKeyFrameAnimation) sourceFreezable;
             base.CloneCurrentValueCore(sourceFreezable);
 
             CopyCommon(sourceAnimation, /* isCurrentValueClone = */ true);
@@ -127,7 +127,7 @@ namespace VL.TimelineCore
         /// </summary>
         protected override void GetAsFrozenCore(Freezable source)
         {
-            var sourceAnimation = (DoubleAnimationUsingKeyFrames) source;
+            var sourceAnimation = (DoubleKeyFrameAnimation) source;
             base.GetAsFrozenCore(source);
 
             CopyCommon(sourceAnimation, /* isCurrentValueClone = */ false);
@@ -138,7 +138,7 @@ namespace VL.TimelineCore
         /// </summary>
         protected override void GetCurrentValueAsFrozenCore(Freezable source)
         {
-            var sourceAnimation = (DoubleAnimationUsingKeyFrames) source;
+            var sourceAnimation = (DoubleKeyFrameAnimation) source;
             base.GetCurrentValueAsFrozenCore(source);
 
             CopyCommon(sourceAnimation, /* isCurrentValueClone = */ true);
@@ -149,27 +149,27 @@ namespace VL.TimelineCore
         /// key frames. The Get*AsFrozenCore methods are implemented the same as the Clone*Core
         /// methods; Get*AsFrozen at the top level will recursively Freeze so it's not done here.
         /// </summary>
-        /// <param name="sourceAnimation"></param>
+        /// <param name="sourceKeyFrameAnimation"></param>
         /// <param name="isCurrentValueClone"></param>
-        private void CopyCommon(DoubleAnimationUsingKeyFrames sourceAnimation, bool isCurrentValueClone)
+        private void CopyCommon(DoubleKeyFrameAnimation sourceKeyFrameAnimation, bool isCurrentValueClone)
         {
-            _areKeyTimesValid = sourceAnimation._areKeyTimesValid;
+            _areKeyTimesValid = sourceKeyFrameAnimation._areKeyTimesValid;
 
             if (_areKeyTimesValid
-                && sourceAnimation._sortedResolvedKeyFrames != null)
+                && sourceKeyFrameAnimation._sortedResolvedKeyFrames != null)
             {
                 // _sortedResolvedKeyFrames is an array of ResolvedKeyFrameEntry so the notion of CurrentValueClone doesn't apply
-                _sortedResolvedKeyFrames = (ResolvedKeyFrameEntry[]) sourceAnimation._sortedResolvedKeyFrames.Clone();
+                _sortedResolvedKeyFrames = (ResolvedKeyFrameEntry[]) sourceKeyFrameAnimation._sortedResolvedKeyFrames.Clone();
             }
 
-            if (sourceAnimation._keyFrames == null) return;
+            if (sourceKeyFrameAnimation._keyFrames == null) return;
             if (isCurrentValueClone)
             {
-                _keyFrames = (DoubleKeyFrameCollection) sourceAnimation._keyFrames.CloneCurrentValue();
+                _keyFrames = (DoubleKeyFrameCollection) sourceKeyFrameAnimation._keyFrames.CloneCurrentValue();
             }
             else
             {
-                _keyFrames = (DoubleKeyFrameCollection) sourceAnimation._keyFrames.Clone();
+                _keyFrames = (DoubleKeyFrameCollection) sourceKeyFrameAnimation._keyFrames.Clone();
             }
 
             OnFreezablePropertyChanged(null, _keyFrames);
@@ -329,97 +329,7 @@ namespace VL.TimelineCore
             }
 
             var currentTime = animationClock.CurrentTime.Value;
-            var keyFrameCount = _sortedResolvedKeyFrames.Length;
-            var maxKeyFrameIndex = keyFrameCount - 1;
-
-            double currentIterationValue;
-
-            Debug.Assert(maxKeyFrameIndex >= 0,
-                "maxKeyFrameIndex is less than zero which means we don't actually have any key frames.");
-
-            var currentResolvedKeyFrameIndex = 0;
-
-            // Skip all the key frames with key times lower than the current time.
-            // currentResolvedKeyFrameIndex will be greater than maxKeyFrameIndex 
-            // if we are past the last key frame.
-            while (currentResolvedKeyFrameIndex < keyFrameCount
-                   && currentTime > _sortedResolvedKeyFrames[currentResolvedKeyFrameIndex]._resolvedKeyTime)
-            {
-                currentResolvedKeyFrameIndex++;
-            }
-
-            // If there are multiple key frames at the same key time, be sure to go to the last one.
-            while (currentResolvedKeyFrameIndex < maxKeyFrameIndex
-                   && currentTime == _sortedResolvedKeyFrames[currentResolvedKeyFrameIndex + 1]._resolvedKeyTime)
-            {
-                currentResolvedKeyFrameIndex++;
-            }
-
-            if (currentResolvedKeyFrameIndex == keyFrameCount)
-            {
-                // Past the last key frame.
-                currentIterationValue = GetResolvedKeyFrameValue(maxKeyFrameIndex);
-            }
-            else if (currentTime == _sortedResolvedKeyFrames[currentResolvedKeyFrameIndex]._resolvedKeyTime)
-            {
-                // Exactly on a key frame.
-                currentIterationValue = GetResolvedKeyFrameValue(currentResolvedKeyFrameIndex);
-            }
-            else
-            {
-                // Between two key frames.
-                var currentSegmentProgress = 0.0;
-                double fromValue;
-
-                if (currentResolvedKeyFrameIndex == 0)
-                {
-                    // The current key frame is the first key frame so we have
-                    // some special rules for determining the fromValue and an
-                    // optimized method of calculating the currentSegmentProgress.                                        
-
-                    // If we're additive we want the base value to be a zero value
-                    // so that if there isn't a key frame at time 0.0, we'll use
-                    // the zero value for the time 0.0 value and then add that 
-                    // later to the base value.
-                    if (IsAdditive)
-                    {
-                        fromValue = 0;
-                    }
-                    else
-                    {
-                        fromValue = defaultOriginValue;
-                    }
-
-                    // Current segment time divided by the segment duration.
-                    // Note: the reason this works is that we know that we're in
-                    // the first segment, so we can assume:
-                    //
-                    // currentTime.TotalMilliseconds                                  = current segment time
-                    // _sortedResolvedKeyFrames[0]._resolvedKeyTime.TotalMilliseconds = current segment duration
-
-                    currentSegmentProgress = currentTime.TotalMilliseconds
-                                             / _sortedResolvedKeyFrames[0]._resolvedKeyTime.TotalMilliseconds;
-                }
-                else
-                {
-                    var previousResolvedKeyFrameIndex = currentResolvedKeyFrameIndex - 1;
-                    var previousResolvedKeyTime =
-                        _sortedResolvedKeyFrames[previousResolvedKeyFrameIndex]._resolvedKeyTime;
-
-                    fromValue = GetResolvedKeyFrameValue(previousResolvedKeyFrameIndex);
-
-                    var segmentCurrentTime = currentTime - previousResolvedKeyTime;
-                    var segmentDuration = _sortedResolvedKeyFrames[currentResolvedKeyFrameIndex]._resolvedKeyTime -
-                                          previousResolvedKeyTime;
-
-                    currentSegmentProgress = segmentCurrentTime.TotalMilliseconds
-                                             / segmentDuration.TotalMilliseconds;
-                }
-
-                currentIterationValue = GetResolvedKeyFrame(currentResolvedKeyFrameIndex)
-                    .InterpolateValue(fromValue, currentSegmentProgress);
-            }
-
+            var currentIterationValue = Evaluate(defaultDestinationValue, defaultOriginValue, currentTime);
 
             // If we're cumulative, we need to multiply the final key frame
             // value by the current repeat count and add this to the return
@@ -430,6 +340,7 @@ namespace VL.TimelineCore
 
                 if (currentRepeat > 0.0)
                 {
+                    var maxKeyFrameIndex = _sortedResolvedKeyFrames.Length - 1;
                     currentIterationValue += GetResolvedKeyFrameValue(maxKeyFrameIndex) * currentRepeat;
                 }
             }
@@ -470,7 +381,38 @@ namespace VL.TimelineCore
             return myResult;
         }
 
-        public double GetCurrentValueCore(
+        /// <summary>
+        /// Calculates the value this animation believes should be the current value for the property.
+        /// </summary>
+        /// <param name="defaultOriginValue">
+        /// This value is the suggested origin value provided to the animation
+        /// to be used if the animation does not have its own concept of a
+        /// start value. If this animation is the first in a composition chain
+        /// this value will be the snapshot value if one is available or the
+        /// base property value if it is not; otherise this value will be the 
+        /// value returned by the previous animation in the chain with an 
+        /// animationClock that is not Stopped.
+        /// </param>
+        /// <param name="defaultDestinationValue">
+        /// This value is the suggested destination value provided to the animation
+        /// to be used if the animation does not have its own concept of an
+        /// end value. This value will be the base value if the animation is
+        /// in the first composition layer of animations on a property; 
+        /// otherwise this value will be the output value from the previous 
+        /// composition layer of animations for the property.
+        /// </param>
+        /// <param name="animationClock">
+        /// This is the animationClock which can generate the CurrentTime or
+        /// CurrentProgress value to be used by the animation to generate its
+        /// output value.
+        /// </param>
+        /// <param name="currentTime">
+        /// CurrentTime value to be used by the animation to generate its
+        /// output value.</param>
+        /// <returns>
+        /// The value this animation believes should be the current value for the property.
+        /// </returns>
+        public double Evaluate(
             double defaultOriginValue,
             double defaultDestinationValue,
             TimeSpan currentTime)
