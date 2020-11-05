@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="ULnxTf75seKOqze9f572XA" LanguageVersion="2020.3.0.56" Version="0.128">
-  <NugetDependency Id="KmuidS169T5OfbAGaCEBDh" Location="VL.CoreLib" Version="2020.3.0-0056-gdf685c9d05" />
+<Document xmlns:p="property" Id="RhibuPg9X0XNuXpHuOgsMA" LanguageVersion="2020.3.0.68" Version="0.128">
+  <NugetDependency Id="KmuidS169T5OfbAGaCEBDh" Location="VL.CoreLib" Version="2020.3.0-0068-gbfc5bf7649" />
   <Patch Id="A8R0Txd5TmdPsOxcL4rLMu">
     <Canvas Id="EIBjrPON2fUN7SQejgCKkE" DefaultCategory="VL.Timeline" CanvasType="FullCategory">
       <Canvas Id="CMfNrgrFcZCM7iGHWVT89M" Name="Widget" Position="415,230">
@@ -282,7 +282,7 @@
               <ControlPoint Id="GECt0KCh6lQMObjfb7uMiu" Bounds="817,296" />
               <ControlPoint Id="UMje7JEE2HBOjSWPIuE1xd" Bounds="480,296" />
               <Node Bounds="804,698,120,19" Id="P6s6YxHFVcGPZTX53CkTXS">
-                <p:NodeReference LastCategoryFullName="VL.Timeline.Widget" LastSymbolSource="VL.Timeline.vl">
+                <p:NodeReference LastCategoryFullName="VL.Timeline.Widget" LastSymbolSource="VL.Timeline - Kopie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="DefaultMultiPointDrawer" />
                 </p:NodeReference>
@@ -340,7 +340,7 @@
                 <Pin Id="BtpKSvydQdmNnzNuzEf8KJ" Name="Output" Kind="StateOutputPin" />
               </Node>
               <Node Bounds="216,623,62,19" Id="Ru6K0wJGV4JLNrl9kFRUgn">
-                <p:NodeReference LastCategoryFullName="VL.Timeline.Widget" LastSymbolSource="VL.Timeline.vl">
+                <p:NodeReference LastCategoryFullName="VL.Timeline.Widget" LastSymbolSource="VL.Timeline - Kopie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="MultiPoint" />
                 </p:NodeReference>
@@ -696,7 +696,7 @@
                 </p:TypeAnnotation>
               </Pad>
               <Node Bounds="364,352,130,19" Id="KKWkcNRqM9wNUO23Vj6Urz">
-                <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.MultiPoint" LastSymbolSource="VL.Timeline.vl">
+                <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.MultiPoint" LastSymbolSource="VL.Timeline - Kopie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="GetMultiPointComponent" />
                 </p:NodeReference>
@@ -704,7 +704,7 @@
                 <Pin Id="R7AQecUFJMhMtYAFCpQgSW" Name="Output" Kind="OutputPin" />
                 <Pin Id="HTaDmUq4QLCOdbtYCpt6Z1" Name="Found" Kind="OutputPin" />
               </Node>
-              <Pad Id="BVUD4o5aQTsPW9EmDdhHSy" SlotId="NpO5yvQkcolOKG9mjWGksw" Bounds="567,472" />
+              <Pad Id="BVUD4o5aQTsPW9EmDdhHSy" SlotId="NpO5yvQkcolOKG9mjWGksw" Bounds="563,474" />
               <Pad Id="Lp6qN7akevUQd1JcbZs1LY" SlotId="NpO5yvQkcolOKG9mjWGksw" Bounds="497,580" />
               <Pad Id="TBmd6RE62t9Nh7Rk3iskAX" SlotId="MSgqHtMWRsoPLDFrbfgE5Y" Bounds="367,442" />
               <Pad Id="CTOymjjG3mfNyqiQZuB8Z7" SlotId="MSgqHtMWRsoPLDFrbfgE5Y" Bounds="369,581" />
@@ -751,7 +751,7 @@
                       <Pin Id="FeIBmdWcz4MN4UuvESwwJ5" Name="Bottom Right" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="409,647,110,19" Id="Lvu0zd6DjpjPStzSR8VZID">
-                      <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.MultiPoint" LastSymbolSource="VL.Timeline.vl">
+                      <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.MultiPoint" LastSymbolSource="VL.Timeline - Kopie.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="NormalizedToMouse" />
                       </p:NodeReference>
@@ -760,7 +760,7 @@
                       <Pin Id="Vv6xQlZ13CvMTkwUpBbyXp" Name="Output" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="535,647,110,19" Id="K3Vn13tv5qHQOCHzwyuqqB">
-                      <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.MultiPoint" LastSymbolSource="VL.Timeline.vl">
+                      <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.MultiPoint" LastSymbolSource="VL.Timeline - Kopie.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="NormalizedToMouse" />
                       </p:NodeReference>
@@ -1009,7 +1009,7 @@
                           <Pin Id="QFv3aRrjvZEMxWcevyeymv" Name="selected" Kind="OutputPin" />
                         </Node>
                         <Node Bounds="580,901,110,19" Id="OVVyBdUodqAOhN3hHbsh83">
-                          <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.MultiPoint" LastSymbolSource="VL.Timeline.vl">
+                          <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.MultiPoint" LastSymbolSource="VL.Timeline - Kopie.vl">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="OperationCallFlag" Name="NormalizedToMouse" />
                           </p:NodeReference>
@@ -1491,7 +1491,7 @@
           <Patch Id="HZKnU4LxOFsQUTrExZOFuj">
             <Canvas Id="U9QpFvaZ4sLP67Azaxzr1Q" CanvasType="Group">
               <Node Bounds="440,429,265,19" Id="JyYGyVFk6eRMAQoQs7CVu7">
-                <p:NodeReference LastCategoryFullName="VL.Timeline.Widget" LastSymbolSource="VL.Timeline.vl">
+                <p:NodeReference LastCategoryFullName="VL.Timeline.Widget" LastSymbolSource="VL.Timeline - Kopie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="AnimationCurve (Spectral)" />
                 </p:NodeReference>
@@ -1709,7 +1709,7 @@
                   <ControlPoint Id="OQ0zakf5qcpNbFcGN9rZPo" Bounds="668,355" />
                   <ControlPoint Id="KtMKqhO539nNHRUbY9x8y9" Bounds="608,435" />
                   <Node Bounds="632,385,66,26" Id="P6SB0soNxKEMojlWtgHDbB">
-                    <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.PointWithData" LastSymbolSource="VL.Timeline.vl">
+                    <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.PointWithData" LastSymbolSource="VL.Timeline - Kopie.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="isSelected" />
                     </p:NodeReference>
@@ -1931,7 +1931,7 @@
                     <Pin Id="ILnUByk8BHrQZLCTuMuSvG" Name="Result" Kind="OutputPin" />
                   </Node>
                   <Node Bounds="1806,554,110,19" Id="A4FPrzDO60oQDNAGm2HrYc">
-                    <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.MultiPoint" LastSymbolSource="VL.Timeline.vl">
+                    <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.MultiPoint" LastSymbolSource="VL.Timeline - Kopie.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="NormalizedToMouse" />
                     </p:NodeReference>
@@ -1985,7 +1985,7 @@
                   <ControlPoint Id="NdE7qlRADcCND9TnjxI6UJ" Bounds="1203,1057" />
                   <ControlPoint Id="P61KDGbLmeXNaVBdKQWI2r" Bounds="1177,1175" />
                   <Node Bounds="1174,1106,85,19" Id="Ew9c4jddSrNMKHF7BbhGft">
-                    <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.MultiPoint" LastSymbolSource="VL.Timeline.vl">
+                    <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.MultiPoint" LastSymbolSource="VL.Timeline - Kopie.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="PointInRange" />
                     </p:NodeReference>
@@ -2097,13 +2097,9 @@
                     <ControlPoint Id="BDbnSCs09OVL6uY0oipkgf" Bounds="1797,432" />
                     <Pad Id="T4Qw5Y02gYjONnZA2NU4kp" SlotId="OPQ4c5PuJbyLvbnysiiGt5" Bounds="1730,433" />
                     <Pad Id="Vj1veKsicq1MqiSljxln09" SlotId="OPQ4c5PuJbyLvbnysiiGt5" Bounds="1732,517" />
+                    <Pad Id="SA1h3JK0vJ7Lv5YtuYY43b" Comment="" Bounds="1338,406,35,28" ShowValueBox="true" isIOBox="true" />
                   </Canvas>
                   <Patch Id="SZwGmKrKEfbO6FfHDtEc3F" Name="Create" ParticipatingElements="AoZmDQIvgEHM8d19uxeblg,MwNl0gpLI7jMuDO8ggOOJr" />
-                  <!--
-
-    ************************  ************************
-
--->
                   <ProcessDefinition Id="IAGLgwOH4eANZkeKxGC4eV" IsHidden="true">
                     <Fragment Id="Ko4mArJsSRPLKMjrk7QIMQ" Patch="SZwGmKrKEfbO6FfHDtEc3F" Enabled="true" />
                     <Fragment Id="KJPJFQ3yACyLm3iJsJ8U6P" Patch="RZ8szsWDDbxNJMFT2W4cuv" />
@@ -2144,6 +2140,7 @@
                   </Patch>
                   <Link Id="McszX9larCCNRGb0YRJxo4" Ids="T4Qw5Y02gYjONnZA2NU4kp,QWPIi3Y9fnlM4z8ZvFJCmh" />
                   <Link Id="I8bYRGksZSpP6XWMFh2o86" Ids="AyWIXTrTQGZOAfsf6E9szh,Vj1veKsicq1MqiSljxln09" />
+                  <Link Id="T1Vd9j0kzEBM5Po2Y3eo7m" Ids="Qb3Eo8oxjRtNwx6vXVR1Uq,SA1h3JK0vJ7Lv5YtuYY43b" />
                 </Patch>
               </Node>
               <Pad Id="BobKu0X519JPxNfN7bR1RK" SlotId="D3ocmkwLvknN2ttYmMnEI2" Bounds="629,665" />
@@ -2270,11 +2267,6 @@
                     </Pad>
                   </Canvas>
                   <Patch Id="NEhyyH9UXx2Mn8H5Rdx0hC" Name="Create" ParticipatingElements="CqHdx5Dh3sAMP4uRS5weCR,DAD5wmv51W2PBIGEWRQYoa,SMh7rVdL5mUQEmgGzcIjpC" />
-                  <!--
-
-    ************************  ************************
-
--->
                   <ProcessDefinition Id="Vpi3LBo1LI0LJNGv8NtSy0" IsHidden="true">
                     <Fragment Id="L6tAeSI5wSsNj22cOQhPU1" Patch="NEhyyH9UXx2Mn8H5Rdx0hC" Enabled="true" />
                     <Fragment Id="RVTvuMlygzxL7JOuXgIvYQ" Patch="QOY7YeQebETPJssf4p6zB5" />
@@ -2344,7 +2336,7 @@
               </Node>
               <ControlPoint Id="G3LuEhMWmXyNOgNe9tfoyj" Bounds="440,735" />
             </Canvas>
-            <Patch Id="AyzEC9W1CLFN5lUzNP9JtK" Name="Create" ParticipatingElements="UjRIfAMCnZyNWBIXJtyiGZ,BWF1a6wEnUwMoSA8XrrIvx,MaQkaQ35Ps2MSPc6SqGhvM" />
+            <Patch Id="AyzEC9W1CLFN5lUzNP9JtK" Name="Create" ParticipatingElements="MaQkaQ35Ps2MSPc6SqGhvM,UjRIfAMCnZyNWBIXJtyiGZ,BWF1a6wEnUwMoSA8XrrIvx" />
             <ProcessDefinition Id="An7rhtdLNzbLPK2cWyy5la" HasStateOut="true">
               <Fragment Id="AcfQaSKmZRdM0DZLhuT9XH" Patch="AyzEC9W1CLFN5lUzNP9JtK" Enabled="true" />
               <Fragment Id="Prt4n3u6sCpLLR7oHro4sp" Patch="VYIYI3CdpZ6QVUUd0Z9FFN" />
@@ -2650,7 +2642,7 @@
               </Node>
               <Pad Id="V0bPCAgAyawP4sWnWgTUvA" SlotId="JkYiaoRTZUNMkoGChxObbQ" Bounds="807,134" />
               <Node Bounds="974,76,130,19" Id="LAHai4aabKjMnbMqeZ03AI">
-                <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.MultiPoint" LastSymbolSource="VL.Timeline.vl">
+                <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.MultiPoint" LastSymbolSource="VL.Timeline - Kopie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="GetMultiPointComponent" />
                 </p:NodeReference>
@@ -2736,12 +2728,13 @@
                             <CategoryReference Kind="Category" Name="Primitive" />
                           </p:NodeReference>
                           <Pin Id="KIM4itBB5a2MpvNRMDepC9" Name="Break" Kind="OutputPin" />
+                          <ControlPoint Id="TU64Mk1rUrOQGuSfy2hFSJ" Bounds="625,1005" Alignment="Top" />
                           <Patch Id="LwnXITtfoTXM0QdboL6ldt" ManuallySortedPins="true">
                             <Patch Id="B08LmSvIVvjLJddW29bw9r" Name="Create" ManuallySortedPins="true" />
                             <Patch Id="Ab75Fq0nHCqLagq7izdtrJ" Name="Update" ManuallySortedPins="true" />
                             <Patch Id="LFzIsazdPlKPS1jVsI6RWH" Name="Dispose" ManuallySortedPins="true" />
                             <Node Bounds="623,1031,66,26" Id="N23bXmuSG3KP0EP1etPLxO">
-                              <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.PointWithData" LastSymbolSource="VL.Timeline.vl">
+                              <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.PointWithData" LastSymbolSource="VL.Timeline - Kopie.vl">
                                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                                 <Choice Kind="OperationCallFlag" Name="MoveBy" />
                               </p:NodeReference>
@@ -2750,10 +2743,9 @@
                               <Pin Id="SqAUZ7spxdpNrYopYtxYNM" Name="Output" Kind="StateOutputPin" />
                             </Node>
                           </Patch>
-                          <ControlPoint Id="TU64Mk1rUrOQGuSfy2hFSJ" Bounds="625,1005" Alignment="Top" />
                         </Node>
                         <Node Bounds="532,950,97,26" Id="O8OVY7liGgMPwhY1VQ4ybf">
-                          <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.MultiPoint" LastSymbolSource="VL.Timeline.vl">
+                          <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.MultiPoint" LastSymbolSource="VL.Timeline - Kopie.vl">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="OperationCallFlag" Name="GetSelectedPoints" />
                           </p:NodeReference>
@@ -2858,7 +2850,7 @@
                       <Pin Id="QBdsYuYxfjeOnDmTf89dVA" Name="Selection" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="726,645,84,26" Id="T77dcb6agUBMtERZIx9CCA">
-                      <p:NodeReference LastCategoryFullName="MultiPointSelection" LastSymbolSource="VL.Timeline.vl">
+                      <p:NodeReference LastCategoryFullName="MultiPointSelection" LastSymbolSource="VL.Timeline - Kopie.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="InUse" />
                       </p:NodeReference>
@@ -2914,7 +2906,7 @@
                 </Patch>
               </Node>
               <Node Bounds="297,463,70,19" Id="UadqDBqP4jpQcqOJcZX2y5">
-                <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.AnimationCurveState" LastSymbolSource="VL.Timeline.vl">
+                <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.AnimationCurveState" LastSymbolSource="VL.Timeline - Kopie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="HandleDrag" />
                   <PinReference Kind="InputPin" Name="OnEvent" />
@@ -3076,7 +3068,7 @@
                               <Pin Id="FmuGwTpYQ8NLFNGSCpPaTo" Name="Output" Kind="StateOutputPin" />
                             </Node>
                             <Node Bounds="577,727,76,19" Id="E1LFJV7backNN5ztilsQ8H">
-                              <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.MultiPoint" LastSymbolSource="VL.Timeline.vl">
+                              <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.MultiPoint" LastSymbolSource="VL.Timeline - Kopie.vl">
                                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                                 <Choice Kind="OperationCallFlag" Name="PointInRange" />
                               </p:NodeReference>
@@ -3160,7 +3152,7 @@
                 </Patch>
               </Node>
               <Node Bounds="297,422,72,19" Id="TwglLBS5qI4O97txHKWXpD">
-                <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.AnimationCurveState" LastSymbolSource="VL.Timeline.vl">
+                <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.AnimationCurveState" LastSymbolSource="VL.Timeline - Kopie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="HandleMove" />
                   <PinReference Kind="InputPin" Name="Update" />
@@ -3285,7 +3277,7 @@
                         <Patch Id="VPabupuwGcmQAJE2X8U0li" Name="Create" ManuallySortedPins="true" />
                         <Patch Id="Kwcb1pi4IJAPTwAwCNx0cJ" Name="Then" ManuallySortedPins="true" />
                         <Node Bounds="458,482,80,19" Id="NCEpMuhkUmQLuUPhvS0wRs">
-                          <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.MultiPoint" LastSymbolSource="VL.Timeline.vl">
+                          <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.MultiPoint" LastSymbolSource="VL.Timeline - Kopie.vl">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="OperationCallFlag" Name="PointsInRange" />
                           </p:NodeReference>
@@ -3344,7 +3336,7 @@
                               <Pin Id="SrG0KEJ5gtXLuqF0EJbSm5" Name="Output" Kind="StateOutputPin" />
                             </Node>
                             <Node Bounds="453,701,110,19" Id="JSDbYIatAjbLoeh0dhgLRZ">
-                              <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.MultiPoint" LastSymbolSource="VL.Timeline.vl">
+                              <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.MultiPoint" LastSymbolSource="VL.Timeline - Kopie.vl">
                                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                                 <Choice Kind="OperationCallFlag" Name="MouseToNormalized" />
                               </p:NodeReference>
@@ -3500,7 +3492,7 @@
                 </Patch>
               </Node>
               <Node Bounds="427,497,102,19" Id="TS4pQ4bvo9sMz7AT48WWOD">
-                <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.AnimationCurveState" LastSymbolSource="VL.Timeline.vl">
+                <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.AnimationCurveState" LastSymbolSource="VL.Timeline - Kopie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="HandleDoubleClick" />
                   <PinReference Kind="InputPin" Name="Update" />
@@ -3542,7 +3534,7 @@
                         <Patch Id="CrzapXvRDzeNWQWFNhUdbG" Name="Create" ManuallySortedPins="true" />
                         <Patch Id="MM3YGBgAQsELVhR4gT4pwR" Name="Then" ManuallySortedPins="true" />
                         <Node Bounds="406,530,85,26" Id="SlxPry8FciBPT8LnCDBcqn">
-                          <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.MultiPoint" LastSymbolSource="VL.Timeline.vl">
+                          <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.MultiPoint" LastSymbolSource="VL.Timeline - Kopie.vl">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="OperationCallFlag" Name="PointsInRange" />
                           </p:NodeReference>
@@ -3609,7 +3601,7 @@
                               <Pin Id="LlkL0qr5JtXNBhQK52XjpT" Name="Result" Kind="OutputPin" />
                             </Node>
                             <Node Bounds="490,800,66,26" Id="Q8IyENqbuirQOfA2Dx8ZLa">
-                              <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.PointWithData" LastSymbolSource="VL.Timeline.vl">
+                              <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.PointWithData" LastSymbolSource="VL.Timeline - Kopie.vl">
                                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                                 <Choice Kind="OperationCallFlag" Name="isSelected" />
                               </p:NodeReference>
@@ -3976,7 +3968,7 @@
                         <Patch Id="TkU7uHwBUs2QdJeqQltMdW" Name="Create" ManuallySortedPins="true" />
                         <Patch Id="JVcdwFKE4xnLx1ISiPxK70" Name="Then" ManuallySortedPins="true" />
                         <Node Bounds="793,733,80,19" Id="GZ56eUDkLphLjn3crHwekn">
-                          <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.MultiPoint" LastSymbolSource="VL.Timeline.vl">
+                          <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.MultiPoint" LastSymbolSource="VL.Timeline - Kopie.vl">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="OperationCallFlag" Name="PointsInRange" />
                           </p:NodeReference>
@@ -3993,6 +3985,7 @@
                             <CategoryReference Kind="Category" Name="Primitive" />
                           </p:NodeReference>
                           <Pin Id="SWhhvJAL6rqLgKeKvdQXCn" Name="Break" Kind="OutputPin" />
+                          <ControlPoint Id="GL1ad1r7FwfMNOg7Cqln0h" Bounds="867,803" Alignment="Top" />
                           <Patch Id="KMNOQA1eyQ4Owd7rAIYA0k" ManuallySortedPins="true">
                             <Patch Id="GBRnhLBLdwePZY97kS3fN9" Name="Create" ManuallySortedPins="true" />
                             <Patch Id="FtqBj4rZwWKNuuJGT7SmsX" Name="Update" ManuallySortedPins="true" />
@@ -4008,7 +4001,7 @@
                               <Pin Id="PMgwFVG7lGZORgddEzOjBd" Name="Output" Kind="StateOutputPin" />
                             </Node>
                             <Node Bounds="920,820,66,26" Id="QCWXNBnELI2OsZHE6nciwd">
-                              <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.PointWithData" LastSymbolSource="VL.Timeline.vl">
+                              <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.PointWithData" LastSymbolSource="VL.Timeline - Kopie.vl">
                                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                                 <Choice Kind="OperationCallFlag" Name="isSelected" />
                               </p:NodeReference>
@@ -4026,7 +4019,6 @@
                               <Pin Id="Bpu38a3vgjRLuM1o2M91m6" Name="Output" Kind="StateOutputPin" />
                             </Node>
                           </Patch>
-                          <ControlPoint Id="GL1ad1r7FwfMNOg7Cqln0h" Bounds="867,803" Alignment="Top" />
                         </Node>
                       </Patch>
                     </Node>
@@ -4070,7 +4062,7 @@
                 </Patch>
               </Node>
               <Node Bounds="424,422,74,19" Id="HpMLHS7cy8jLD0mnng6up1">
-                <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.AnimationCurveState" LastSymbolSource="VL.Timeline.vl">
+                <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.AnimationCurveState" LastSymbolSource="VL.Timeline - Kopie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="HandleDown" />
                   <PinReference Kind="InputPin" Name="Update" />
@@ -4081,7 +4073,7 @@
                 <Pin Id="RqfAqc7JSXEOYJJJuD2zLA" Name="Range" Kind="InputPin" />
               </Node>
               <Node Bounds="427,460,96,19" Id="MgltRgyaQMWPdWxG2S8mAx">
-                <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.AnimationCurveState" LastSymbolSource="VL.Timeline.vl">
+                <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.AnimationCurveState" LastSymbolSource="VL.Timeline - Kopie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="HandleDownMeta" />
                   <PinReference Kind="InputPin" Name="Update" />
@@ -4186,7 +4178,7 @@
                         <Patch Id="BIFK9hwJuweMrx4SqQf16w" Name="Create" ManuallySortedPins="true" />
                         <Patch Id="LavhHNIiySaLj9Pj0noD2R" Name="Then" ManuallySortedPins="true" />
                         <Node Bounds="527,1088,-27,26" Id="N9jnRTLH4fIQMjlQ1z40JX">
-                          <p:NodeReference LastCategoryFullName="MultiPointSelection" LastSymbolSource="VL.Timeline.vl">
+                          <p:NodeReference LastCategoryFullName="MultiPointSelection" LastSymbolSource="VL.Timeline - Kopie.vl">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="OperationCallFlag" Name="SetRangeMin" />
                           </p:NodeReference>
@@ -4195,7 +4187,7 @@
                           <Pin Id="FD9teNY7Q5qPYCBVcu09HY" Name="RangeMin" Kind="InputPin" />
                         </Node>
                         <Node Bounds="527,1126,-26,26" Id="GLOAK1EyeeDO8qnag1OAzA">
-                          <p:NodeReference LastCategoryFullName="MultiPointSelection" LastSymbolSource="VL.Timeline.vl">
+                          <p:NodeReference LastCategoryFullName="MultiPointSelection" LastSymbolSource="VL.Timeline - Kopie.vl">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="OperationCallFlag" Name="SetRangeMax" />
                           </p:NodeReference>
@@ -4216,7 +4208,7 @@
                       </Patch>
                     </Node>
                     <Node Bounds="624,754,85,26" Id="BhJqSJ5tIGqNsf9JhPvzoQ">
-                      <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.MultiPoint" LastSymbolSource="VL.Timeline.vl">
+                      <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.MultiPoint" LastSymbolSource="VL.Timeline - Kopie.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="PointsInRange" />
                       </p:NodeReference>
@@ -4251,7 +4243,7 @@
                     </Node>
                     <ControlPoint Id="CaVJs6p6YxCMGl4fwZZQ7P" Bounds="798,459" />
                     <Node Bounds="685,1008,110,19" Id="OrxLMB20Tw2PrBjA3un1F6">
-                      <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.MultiPoint" LastSymbolSource="VL.Timeline.vl">
+                      <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.MultiPoint" LastSymbolSource="VL.Timeline - Kopie.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="MouseToNormalized" />
                       </p:NodeReference>
@@ -4361,7 +4353,7 @@
                         <Patch Id="Q8BKuc4ZWmKLo545QXlDPr" Name="Create" ManuallySortedPins="true" />
                         <Patch Id="MTFe40zH2IOO22dLMqZ9QF" Name="Then" ManuallySortedPins="true" />
                         <Node Bounds="620,1141,110,19" Id="KomqogHyBinMQYnJ1l5a5I">
-                          <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.MultiPoint" LastSymbolSource="VL.Timeline.vl">
+                          <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.MultiPoint" LastSymbolSource="VL.Timeline - Kopie.vl">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="OperationCallFlag" Name="MouseToNormalized" />
                           </p:NodeReference>
@@ -4370,7 +4362,7 @@
                           <Pin Id="JdxurN4KkzGOr1KrySdR3Y" Name="Output" Kind="OutputPin" />
                         </Node>
                         <Node Bounds="629,1207,84,26" Id="NR9dPyfzHohNTzRxHBe0S5">
-                          <p:NodeReference LastCategoryFullName="MultiPointSelection" LastSymbolSource="VL.Timeline.vl">
+                          <p:NodeReference LastCategoryFullName="MultiPointSelection" LastSymbolSource="VL.Timeline - Kopie.vl">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="OperationCallFlag" Name="SetRangeMax" />
                           </p:NodeReference>
@@ -4447,7 +4439,7 @@
                       <Pin Id="AqW1mKIOIBXLM5I6zxxe2O" Name="Double Clic" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="553,747,85,26" Id="DSeMrdWQNMtM4vGu2iH0yv">
-                      <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.MultiPoint" LastSymbolSource="VL.Timeline.vl">
+                      <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.MultiPoint" LastSymbolSource="VL.Timeline - Kopie.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="PointsInRange" />
                       </p:NodeReference>
@@ -4568,7 +4560,7 @@
                       <Pin Id="KfUCOT6LCLmO0cE4HiXqQ6" Name="Selection" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="1008,878" Id="IXOy0kr3M0HPkf3s6DVF8r">
-                      <p:NodeReference LastCategoryFullName="MultiPointSelection" LastSymbolSource="VL.Timeline.vl">
+                      <p:NodeReference LastCategoryFullName="MultiPointSelection" LastSymbolSource="VL.Timeline - Kopie.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="InUse" />
                       </p:NodeReference>
@@ -4631,7 +4623,7 @@
                 </Patch>
               </Node>
               <Node Bounds="572,427,114,19" Id="P1UEllg7s9MNPoLyf51XlP">
-                <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.AnimationCurveState" LastSymbolSource="VL.Timeline.vl">
+                <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.AnimationCurveState" LastSymbolSource="VL.Timeline - Kopie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="HandleSelectionDown" />
                 </p:NodeReference>
@@ -4641,7 +4633,7 @@
                 <Pin Id="KvzlqO4VsGSPzo74JBKLqS" Name="Range" Kind="InputPin" />
               </Node>
               <Node Bounds="577,462,110,19" Id="NbzCE3L5ggGMK8MHIuQ9BS">
-                <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.AnimationCurveState" LastSymbolSource="VL.Timeline.vl">
+                <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.AnimationCurveState" LastSymbolSource="VL.Timeline - Kopie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="HandleSelectionDrag" />
                 </p:NodeReference>
@@ -4743,6 +4735,7 @@
                             <CategoryReference Kind="Category" Name="Primitive" />
                           </p:NodeReference>
                           <Pin Id="Buw1sKNHEWSMpQrGgc9qe1" Name="Break" Kind="OutputPin" />
+                          <ControlPoint Id="OPEXgpTKdz7MTGrTrVPS9S" Bounds="604,1005" Alignment="Top" />
                           <Patch Id="QzPwp2TOXXhQTCjwnK5etu" ManuallySortedPins="true">
                             <Patch Id="Qpf3Sr5OTuZL87AalKp4b1" Name="Create" ManuallySortedPins="true" />
                             <Patch Id="LKKe2t1t0fuMbyiKSam7fe" Name="Update" ManuallySortedPins="true" />
@@ -4758,7 +4751,7 @@
                               <Pin Id="Sa7PFKFQwqLN2hRcytiCMh" Name="Output" Kind="StateOutputPin" />
                             </Node>
                             <Node Bounds="654,1068,66,26" Id="Ig1J8EFi6hcNU3ubgS45U5">
-                              <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.PointWithData" LastSymbolSource="VL.Timeline.vl">
+                              <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.PointWithData" LastSymbolSource="VL.Timeline - Kopie.vl">
                                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                                 <Choice Kind="OperationCallFlag" Name="GetIsOver" />
                               </p:NodeReference>
@@ -4797,10 +4790,9 @@
                               <Pin Id="B2Q17HgfjV6Ppq542Tyi1j" Name="selected" Kind="OutputPin" />
                             </Node>
                           </Patch>
-                          <ControlPoint Id="OPEXgpTKdz7MTGrTrVPS9S" Bounds="604,1005" Alignment="Top" />
                         </Node>
                         <Node Bounds="581,1336,115,26" Id="N5JEMv6sSTDP1BOg839ElN">
-                          <p:NodeReference LastCategoryFullName="MultiPointSelection" LastSymbolSource="VL.Timeline.vl">
+                          <p:NodeReference LastCategoryFullName="MultiPointSelection" LastSymbolSource="VL.Timeline - Kopie.vl">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="OperationCallFlag" Name="SetRangeMin" />
                           </p:NodeReference>
@@ -4814,7 +4806,7 @@
                           </p:TypeAnnotation>
                         </Pad>
                         <Node Bounds="716,1337,84,26" Id="KUwmpncINhwOc9iCfQ0FKB">
-                          <p:NodeReference LastCategoryFullName="MultiPointSelection" LastSymbolSource="VL.Timeline.vl">
+                          <p:NodeReference LastCategoryFullName="MultiPointSelection" LastSymbolSource="VL.Timeline - Kopie.vl">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="OperationCallFlag" Name="SetRangeMax" />
                           </p:NodeReference>
@@ -4880,7 +4872,7 @@
                       <Pin Id="O2YeNLMMmzQOlLHvOHDTWY" Name="Selection" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="409,824,84,26" Id="I5LUCErAncvM5ZBpcuf5vs">
-                      <p:NodeReference LastCategoryFullName="MultiPointSelection" LastSymbolSource="VL.Timeline.vl">
+                      <p:NodeReference LastCategoryFullName="MultiPointSelection" LastSymbolSource="VL.Timeline - Kopie.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="InUse" />
                       </p:NodeReference>
@@ -4935,7 +4927,7 @@
                 </Patch>
               </Node>
               <Node Bounds="577,503,100,19" Id="K6oGd2pYjeiPmmO24vSTkJ">
-                <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.AnimationCurveState" LastSymbolSource="VL.Timeline.vl">
+                <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.AnimationCurveState" LastSymbolSource="VL.Timeline - Kopie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="HandleSelectionUP" />
                 </p:NodeReference>
@@ -5103,7 +5095,7 @@
                       <Pin Id="HEV3iJq5LSIMPjbXpjWQTS" Name="Selection" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="821,611,84,26" Id="C7CUdsqsAVsOY0hi9pmUEz">
-                      <p:NodeReference LastCategoryFullName="MultiPointSelection" LastSymbolSource="VL.Timeline.vl">
+                      <p:NodeReference LastCategoryFullName="MultiPointSelection" LastSymbolSource="VL.Timeline - Kopie.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="InUse" />
                       </p:NodeReference>
@@ -5152,7 +5144,7 @@
                 </Patch>
               </Node>
               <Node Bounds="723,421,117,19" Id="Qm3XVS7GGE9QPfAmjeVoRZ">
-                <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.AnimationCurveState" LastSymbolSource="VL.Timeline.vl">
+                <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.AnimationCurveState" LastSymbolSource="VL.Timeline - Kopie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="HandleTransformDrag" />
                 </p:NodeReference>
@@ -5339,7 +5331,7 @@
                 </Patch>
               </Node>
               <Node Bounds="723,459,45,19" Id="JfQJov8kfvtOxj2TskXi1D">
-                <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.AnimationCurveState" LastSymbolSource="VL.Timeline.vl">
+                <p:NodeReference LastCategoryFullName="VL.Timeline.Widget.AnimationCurveState" LastSymbolSource="VL.Timeline - Kopie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="HandleTransformWheel" />
                 </p:NodeReference>
@@ -5635,7 +5627,7 @@
             <ControlPoint Id="E90MZVGacXYLlL6AYLmoIa" Bounds="526,631" />
             <ControlPoint Id="M3WBj5B3W7pOFddlK2gi6X" Bounds="554,869" />
             <Node Bounds="438,713,90,19" Id="Q5nJKKR6cw7NPbhtLs2Q0z">
-              <p:NodeReference LastCategoryFullName="VL.Timeline.Animation" LastSymbolSource="VL.Timeline.vl">
+              <p:NodeReference LastCategoryFullName="VL.Timeline.Animation" LastSymbolSource="VL.Timeline - Kopie.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="CreateLinearKey" />
               </p:NodeReference>
@@ -5746,7 +5738,7 @@
                       <Pin Id="LxQXcgO1dprQFwvgIwx9Yp" Name="Output" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="435,1256,101,19" Id="NXtHS3tgV97LTXvnocT756">
-                      <p:NodeReference LastCategoryFullName="VL.Timeline.Animation" LastSymbolSource="VL.Timeline.vl">
+                      <p:NodeReference LastCategoryFullName="VL.Timeline.Animation" LastSymbolSource="VL.Timeline - Kopie.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="KeyFrameToVector" />
                       </p:NodeReference>
@@ -5974,7 +5966,7 @@
               <Pin Id="S5wR1rQYeZcLe4oJFZ48iw" Name="Font3" Kind="OutputPin" />
             </Node>
             <Node Bounds="614,394,53,26" Id="FgVmVjiTGgPM3g9AF7sCkW">
-              <p:NodeReference LastCategoryFullName="VL.Timeline.Animation" LastSymbolSource="VL.Timeline.vl">
+              <p:NodeReference LastCategoryFullName="VL.Timeline.Animation" LastSymbolSource="VL.Timeline - Kopie.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="ToLayer" />
               </p:NodeReference>
@@ -6067,7 +6059,7 @@
                 <Pin Id="NdfSAlV7wC5OxVXlZvyzym" Name="Output" Kind="OutputPin" />
               </Node>
               <Node Bounds="421,417,53,26" Id="ClRCrpAAvMHPRfS0VF9FfE">
-                <p:NodeReference LastCategoryFullName="VL.Timeline.Animation" LastSymbolSource="VL.Timeline.vl">
+                <p:NodeReference LastCategoryFullName="VL.Timeline.Animation" LastSymbolSource="VL.Timeline - Kopie.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="AddLinearKeyFrame" />
                 </p:NodeReference>
@@ -6094,7 +6086,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="U02iTFyjTcPNaK6wfxkTZL" Name="Bounds" Kind="InputPin" DefaultValue="1764, 378, 804, 400">
+            <Pin Id="U02iTFyjTcPNaK6wfxkTZL" Name="Bounds" Kind="InputPin" DefaultValue="1764, 376, 804, 400">
               <p:TypeAnnotation LastCategoryFullName="System.Windows" LastSymbolSource="VL.CoreLib.Windows.vl">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -6288,7 +6280,7 @@
             <Pin Id="QDwGZ5GPgoNMDXhXty81ec" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Node Bounds="136,862,53,26" Id="Do0AUPUWhxzPvzwCPutHdD">
-            <p:NodeReference LastCategoryFullName="VL.Timeline.Animation" LastSymbolSource="VL.Timeline.vl">
+            <p:NodeReference LastCategoryFullName="VL.Timeline.Animation" LastSymbolSource="VL.Timeline - Kopie.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="ToLayer" />
             </p:NodeReference>
@@ -6306,7 +6298,7 @@
             <Pin Id="EAp6cGl1UU9OXl9XVcC3tx" Name="Context" Kind="OutputPin" />
           </Node>
           <Node Bounds="243,866" Id="RqAnrYhfrypPtoSrO09VnB">
-            <p:NodeReference LastCategoryFullName="VL.Timeline.Widget" LastSymbolSource="VL.Timeline.vl">
+            <p:NodeReference LastCategoryFullName="VL.Timeline.Widget" LastSymbolSource="VL.Timeline - Kopie.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="AnimationCurve" />
             </p:NodeReference>
@@ -6375,8 +6367,8 @@
   </Patch>
   <PlatformDependency Id="HWOEWW2oPySLZMQr5W5LLB" Location="PresentationCore" />
   <PlatformDependency Id="FGbrMkKkwEQM0DNB8TTzbW" Location="PresentationFramework" />
-  <NugetDependency Id="AbgpOxxLXNvPEVfdyffbhO" Location="VL.Skia" Version="2020.3.0-0056-gdf685c9d05" />
+  <NugetDependency Id="AbgpOxxLXNvPEVfdyffbhO" Location="VL.Skia" Version="2020.3.0-0068-gbfc5bf7649" />
   <PlatformDependency Id="TsyTJV1v0CDLnKxyoV24tL" Location="./lib/VL.Timeline.Util.dll" />
-  <NugetDependency Id="Lt8Ousthm9mPv0SpQKpAv4" Location="VL.Elementa" Version="4.0.4" />
-  <NugetDependency Id="DNcYPgT3V8yPUNMSZfs3A3" Location="VL.HDE" Version="2020.3.0-0056-gdf685c9d05" />
+  <NugetDependency Id="Lt8Ousthm9mPv0SpQKpAv4" Location="VL.Elementa" Version="4.0.5" />
+  <NugetDependency Id="DNcYPgT3V8yPUNMSZfs3A3" Location="VL.HDE" Version="2020.3.0-0068-gbfc5bf7649" />
 </Document>
